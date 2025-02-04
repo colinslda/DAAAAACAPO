@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAhRyFF0kJR4sSj3mCl-QMcjJ7mpekSDsA",
+  authDomain: "dacapoapp.firebaseapp.com",
+  projectId: "dacapoapp",
+  storageBucket: "dacapoapp.firebasestorage.appT",
+  messagingSenderId: "456964485321",
+  appId: "1:456964485321:web:1c993f028c8a49fdc11d18"
 };
 
 const app = initializeApp(firebaseConfig);
