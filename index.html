@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Connect</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js"></script>
+</head>
+<body class="dark-mode">
+    <!-- Authentification -->
+    <div id="auth-container" class="auth-container">
+        <form id="signup-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <div class="auth-providers">
+            <button id="google-signin">Continuer avec Google</button>
+            <button id="apple-signin">Continuer avec Apple</button>
+        </div>
+    </div>
+
+    <!-- Application principale -->
+    <div id="app-container" class="hidden">
+        <main id="main-content">
+            <!-- Onglets -->
+            <section id="home-tab" class="tab active"></section>
+            <section id="search-tab" class="tab"></section>
+            <section id="messages-tab" class="tab"></section>
+        </main>
+        
+        <!-- Navigation inférieure -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-tab="home-tab">🏠 Accueil</button>
+            <button class="nav-item" data-tab="search-tab">🔍 Recherche</button>
+            <button class="nav-item" data-tab="messages-tab">💬 Messages</button>
+        </nav>
+    </div>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
