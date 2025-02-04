@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #4a90e2;
+  --background-dark: #1a1a1a;
+  --text-light: #ffffff;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: var(--background-dark);
+}
+
+.tab {
+  display: none;
+  padding: 1rem;
+  min-height: 80vh;
+}
+
+.tab.active {
+  display: block;
+}
+
+/* Optimisation mobile */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 1rem;
+    margin-top: 30%;
+  }
+  
+  input {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
